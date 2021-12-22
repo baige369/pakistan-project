@@ -1,19 +1,37 @@
 :root {
   --primary-color: #01411c;
+  --heading-font-family: "Marck Script", cursive;
+  --secondary-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--secondary-font-family);
 }
 
 h1 {
-  font-family: "Marck Script", cursive;
+  font-family: var(--heading-font-family);
   text-align: center;
   color: var(--primary-color);
   font-size: 70px !important;
 }
 
+h2 {
+  font-family: var(--heading-font-family);
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 30px !important;
+}
+
 p {
   text-align: center;
   text-align: justify;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.about h1 {
+  font-size: 50px !important;
 }
 
 .active {
@@ -22,9 +40,18 @@ p {
 .button-explore {
   background-color: var(--primary-color) !important;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
   display: block;
   margin: 0 auto;
+}
+
+.my-picture {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  max-width: 80%;
+  border: 2px;
+  border-color: var(--primary-color);
+  border-style: double;
 }
 
 .flowers {
@@ -33,10 +60,10 @@ p {
   width: 30%;
 }
 
-.navbar-brand {
+.brand {
   margin-left: 50px;
-  font-family: "Marck Script", cursive;
   font-size: 30px !important;
+  font-family: var(--heading-font-family) !important;
   color: var(--primary-color) !important;
 }
 
@@ -55,16 +82,17 @@ p {
   h1 {
     font-size: 40px !important;
   }
+
   .flowers {
     width: 85%;
-  }
-  .navbar-brand {
-    font-size: 0px !important;
   }
 }
 
 @media (min-width: 992px) {
   .video-fluid {
     width: 70%;
+  }
+  .who-am-i {
+    margin-bottom: 44px;
   }
 }
