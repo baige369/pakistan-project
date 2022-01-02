@@ -22,6 +22,13 @@ h2 {
   font-size: 30px !important;
 }
 
+h5 {
+  font-family: var(--heading-font-family);
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 50px !important;
+}
+
 p {
   text-align: center;
   text-align: justify;
@@ -39,9 +46,19 @@ p {
 }
 .button-explore {
   background-color: var(--primary-color) !important;
-  font-size: 16px;
-  display: block;
-  margin: 0 auto;
+  font-size: 18px !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+.carousel-control-next {
+  right: 20px !important;
+  bottom: 850px !important;
+}
+
+.carousel-control-prev {
+  left: 20px !important;
+  bottom: 850px !important;
 }
 
 .my-picture {
@@ -61,10 +78,33 @@ p {
 }
 
 .brand {
-  margin-left: 50px;
+  margin-left: 10px;
   font-size: 30px !important;
   font-family: var(--heading-font-family) !important;
   color: var(--primary-color) !important;
+}
+
+.nav-link {
+  margin-left: 10px;
+}
+
+.pic-description {
+  font-family: var(--secondary-font-family);
+  text-align: center;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+}
+
+.picture {
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  border: 2px;
+  border-color: var(--primary-color);
+  border-style: double;
+  width: 75%;
 }
 
 .video-fluid {
@@ -78,21 +118,92 @@ p {
   border-color: var(--primary-color);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 539px) {
   h1 {
     font-size: 40px !important;
   }
 
+  h5 {
+    font-size: 40px !important;
+  }
+  .picture {
+    width: 100%;
+  }
+
+  .brand {
+    font-size: 28px !important;
+  }
   .flowers {
     width: 85%;
   }
+
+  .carousel-item {
+    margin-bottom: 900px;
+  }
+
+  .carousel-caption {
+    position: relative;
+    top: 270px;
+  }
+
+  .carousel-control-next {
+    right: 20px !important;
+    bottom: 850px !important;
+  }
+
+  .carousel-control-prev {
+    left: 20px !important;
+    bottom: 850px !important;
+  }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 540px) {
+  .carousel-caption {
+    position: relative;
+    top: 330px;
+  }
+
+  .carousel-item {
+    margin-bottom: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .brand {
+    margin-left: 50px;
+  }
   .video-fluid {
     width: 70%;
   }
   .who-am-i {
     margin-bottom: 44px;
+  }
+
+  .carousel-caption {
+    position: relative;
+    top: 500px;
+  }
+
+  .carousel-item {
+    margin-bottom: 600px;
+  }
+  .carousel-control-next {
+    right: 90px !important;
+    bottom: 200px !important;
+  }
+
+  .carousel-control-prev {
+    left: 90px !important;
+    bottom: 200px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-caption {
+    position: relative;
+    top: 650px;
+  }
+  .carousel-item {
+    margin-bottom: 400px;
   }
 }
