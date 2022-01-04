@@ -4,10 +4,6 @@
   --secondary-font-family: "Poppins", sans-serif;
 }
 
-body {
-  font-family: var(--secondary-font-family);
-}
-
 h1 {
   font-family: var(--heading-font-family);
   text-align: center;
@@ -30,7 +26,6 @@ h3 {
 }
 
 p {
-  text-align: center !important;
   text-align: justify;
   font-size: 16px;
   margin-right: 5px;
@@ -46,21 +41,6 @@ footer {
 footer p {
   margin: 0 !important;
 }
-.GitHub-rep {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.icons {
-  color: var(--primary-color);
-  margin: 0 10px;
-  margin-top: 15px;
-}
-
-.icons:hover {
-  color: #0d6efd;
-  transition: all 150ms ease-in-out;
-}
 
 .about h1 {
   font-size: 50px !important;
@@ -68,6 +48,13 @@ footer p {
 
 .active {
   font-weight: bolder;
+}
+
+.brand {
+  margin-left: 10px;
+  font-size: 30px !important;
+  font-family: var(--heading-font-family) !important;
+  color: var(--primary-color) !important;
 }
 
 .button-explore {
@@ -87,14 +74,14 @@ footer p {
   bottom: 850px !important;
 }
 
-.my-picture {
-  display: block;
-  margin: 0 auto;
-  border-radius: 20px;
-  max-width: 80%;
-  border: 2px;
-  border-color: var(--primary-color);
-  border-style: double;
+.contact-link {
+  color: #000;
+  text-decoration: none;
+  font-family: var(--secondary-font-family);
+}
+
+.contact-link:hover {
+  color: #000;
 }
 
 .flowers {
@@ -108,28 +95,34 @@ footer p {
   margin: 20px;
   color: var(--primary-color);
   font-family: var(--heading-font-family);
+  text-align: center;
 }
 
-.brand {
-  margin-left: 10px;
-  font-size: 30px !important;
-  font-family: var(--heading-font-family) !important;
-  color: var(--primary-color) !important;
-}
-.contact-link {
-  color: #000;
+.GitHub-rep {
+  color: var(--primary-color);
   text-decoration: none;
-  font-family: (--secondary-font-family);
-}
-
-.contact-link:hover {
-  color: #000;
 }
 
 .icons {
-  font-size: 20px;
   color: var(--primary-color);
-  text-align: center;
+  margin: 0 10px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.icons:hover {
+  color: #0d6efd;
+  transition: all 150ms ease-in-out;
+}
+
+.my-picture {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  max-width: 80%;
+  border: 2px;
+  border-color: var(--primary-color);
+  border-style: double;
 }
 
 .nav-link {
@@ -143,6 +136,7 @@ footer p {
   font-size: 16px !important;
   font-weight: normal;
   color: black;
+  margin: 0;
 }
 
 .picture {
