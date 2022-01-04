@@ -23,6 +23,7 @@ h3 {
   text-align: center;
   color: var(--primary-color);
   font-size: 50px !important;
+  width: 70%;
 }
 
 p {
@@ -59,9 +60,12 @@ footer p {
 
 .button-explore {
   background-color: var(--primary-color) !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
   display: block !important;
   margin: 0 auto !important;
+  max-width: 70%;
+  border-radius: 50px;
+  padding: 10px 15px !important;
 }
 
 .carousel-control-next {
@@ -131,12 +135,13 @@ footer p {
 
 .pic-description {
   font-family: var(--secondary-font-family);
-  text-align: center;
   text-align: justify !important;
   font-size: 16px !important;
   font-weight: normal;
   color: black;
   margin: 0;
+  padding: 0;
+  width: 70%;
 }
 
 .picture {
@@ -164,7 +169,7 @@ footer p {
     font-size: 40px !important;
   }
 
-  h5 {
+  h3 {
     font-size: 40px !important;
   }
   .picture {
@@ -174,38 +179,50 @@ footer p {
   .brand {
     font-size: 28px !important;
   }
+
   .flowers {
     width: 85%;
   }
 
   .carousel-item {
-    margin-bottom: 900px;
+    margin-bottom: 100px;
   }
 
   .carousel-caption {
     position: relative;
-    top: 270px;
+    top: 10px;
+    right: 50px;
   }
 
   .carousel-control-next {
     right: 20px !important;
-    bottom: 850px !important;
+    bottom: 700px !important;
   }
 
   .carousel-control-prev {
     left: 20px !important;
-    bottom: 850px !important;
+    bottom: 700px !important;
   }
 }
 
 @media (min-width: 540px) {
   .carousel-caption {
     position: relative;
-    top: 330px;
+    top: 50px;
   }
 
   .carousel-item {
-    margin-bottom: 600px;
+    margin-bottom: 300px;
+  }
+
+  .carousel-control-next {
+    right: 60px !important;
+    bottom: 600px !important;
+  }
+
+  .carousel-control-prev {
+    left: 60px !important;
+    bottom: 600px !important;
   }
 }
 
@@ -222,11 +239,11 @@ footer p {
 
   .carousel-caption {
     position: relative;
-    top: 500px;
+    top: 50px;
   }
 
   .carousel-item {
-    margin-bottom: 600px;
+    margin-bottom: 100px;
   }
   .carousel-control-next {
     right: 90px !important;
@@ -242,9 +259,9 @@ footer p {
 @media (min-width: 1024px) {
   .carousel-caption {
     position: relative;
-    top: 650px;
+    top: 20px;
   }
   .carousel-item {
-    margin-bottom: 400px;
+    margin-bottom: 100px;
   }
 }
