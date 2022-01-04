@@ -22,7 +22,7 @@ h2 {
   font-size: 30px !important;
 }
 
-h5 {
+h3 {
   font-family: var(--heading-font-family);
   text-align: center;
   color: var(--primary-color);
@@ -35,6 +35,31 @@ p {
   font-size: 16px;
   margin-right: 5px;
   margin-left: 5px;
+  font-family: var(--secondary-font-family);
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0 !important;
+}
+.GitHub-rep {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.icons {
+  color: var(--primary-color);
+  margin: 0 10px;
+  margin-top: 15px;
+}
+
+.icons:hover {
+  color: #0d6efd;
+  transition: all 150ms ease-in-out;
 }
 
 .about h1 {
@@ -44,6 +69,7 @@ p {
 .active {
   font-weight: bolder;
 }
+
 .button-explore {
   background-color: var(--primary-color) !important;
   font-size: 18px !important;
@@ -77,6 +103,13 @@ p {
   width: 30%;
 }
 
+.footer {
+  font-size: 20px;
+  margin: 20px;
+  color: var(--primary-color);
+  font-family: var(--heading-font-family);
+}
+
 .brand {
   margin-left: 10px;
   font-size: 30px !important;
@@ -86,13 +119,11 @@ p {
 .contact-link {
   color: #000;
   text-decoration: none;
+  font-family: (--secondary-font-family);
 }
 
 .contact-link:hover {
   color: #000;
-}
-.nav-link {
-  margin-left: 10px;
 }
 
 .icons {
@@ -101,18 +132,21 @@ p {
   text-align: center;
 }
 
+.nav-link {
+  margin-left: 10px;
+}
+
 .pic-description {
   font-family: var(--secondary-font-family);
   text-align: center;
-  text-align: justify;
-  font-size: 16px;
+  text-align: justify !important;
+  font-size: 16px !important;
   font-weight: normal;
   color: black;
 }
 
 .picture {
   border-radius: 20px;
-  display: block;
   margin: 0 auto;
   border: 2px;
   border-color: var(--primary-color);
